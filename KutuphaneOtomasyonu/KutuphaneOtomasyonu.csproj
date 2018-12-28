@@ -64,6 +64,7 @@
       <DependentUpon>201812280908479_denem.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\KitapViewModel.cs" />
     <Compile Include="Models\YazarViewModel.cs" />
     <Compile Include="MyContext.cs" />
     <Compile Include="Program.cs" />
@@ -71,6 +72,12 @@
     <Compile Include="Entities\Uyeler.cs" />
     <Compile Include="Entities\Yazar.cs" />
     <Compile Include="Models\UyelerViewModel.cs" />
+    <Compile Include="UyeKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeKayit.Designer.cs">
+      <DependentUpon>UyeKayit.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,7 +92,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UyeKayit.resx">
+      <DependentUpon>UyeKayit.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,6 +110,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kutuphane.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

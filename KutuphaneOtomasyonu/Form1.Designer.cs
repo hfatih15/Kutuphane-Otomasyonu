@@ -34,10 +34,14 @@
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.btnYazargetir = new System.Windows.Forms.Button();
             this.btnUyeleriGetir = new System.Windows.Forms.Button();
+            this.üyeKayıtİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.üyeKayıtİşlemleriToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -88,6 +92,13 @@
             this.btnUyeleriGetir.UseVisualStyleBackColor = true;
             this.btnUyeleriGetir.Click += new System.EventHandler(this.btnUyeleriGetir_Click);
             // 
+            // üyeKayıtİşlemleriToolStripMenuItem
+            // 
+            this.üyeKayıtİşlemleriToolStripMenuItem.Name = "üyeKayıtİşlemleriToolStripMenuItem";
+            this.üyeKayıtİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.üyeKayıtİşlemleriToolStripMenuItem.Text = "Üye Kayıt İşlemleri";
+            this.üyeKayıtİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.üyeKayıtİşlemleriToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -103,6 +114,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,6 +129,7 @@
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.Button btnYazargetir;
         private System.Windows.Forms.Button btnUyeleriGetir;
+        private System.Windows.Forms.ToolStripMenuItem üyeKayıtİşlemleriToolStripMenuItem;
     }
 }
 

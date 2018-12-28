@@ -45,5 +45,13 @@ namespace KutuphaneOtomasyonu
 
                 }).ToList();
         }
+
+        private void üyeKayıtİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UyeKayit yeniSayfa = new UyeKayit();
+
+            yeniSayfa.ShowDialog();
+      
+        }
     }
 }
