@@ -29,6 +29,7 @@ namespace KutuphaneOtomasyonu
            lstyazar.DataSource= db.Yazarlar
                 .Select(x => new YazarViewModel
                 {
+                    //deneme
                     YazarAd = x.YazarAd,
                     YazarSoyad = x.YazarSoyad
                 }).ToList();
