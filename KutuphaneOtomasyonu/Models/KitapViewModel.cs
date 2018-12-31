@@ -20,7 +20,7 @@ namespace KutuphaneOtomasyonu.Models
         public virtual Yazar Yazar { get; set; }
         public int Adet { get; set; }
 
-        public override string ToString() => $"{KitapAdi} ({Adet})";
+        public override string ToString() => $"Kitap Adı: {KitapAdi} - Adet: {Adet} ";
 
     }
 }

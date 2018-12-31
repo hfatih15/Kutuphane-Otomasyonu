@@ -10,6 +10,21 @@
     <AssemblyName>KutuphaneOtomasyonu</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -59,11 +74,18 @@
     </Compile>
     <Compile Include="Entities\Kiralama.cs" />
     <Compile Include="Entities\Kitap.cs" />
-    <Compile Include="Migrations\201812280908479_denem.cs" />
-    <Compile Include="Migrations\201812280908479_denem.Designer.cs">
-      <DependentUpon>201812280908479_denem.cs</DependentUpon>
+    <Compile Include="KitapKirala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapKirala.Designer.cs">
+      <DependentUpon>KitapKirala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812310920401_son.cs" />
+    <Compile Include="Migrations\201812310920401_son.Designer.cs">
+      <DependentUpon>201812310920401_son.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\KitapKiralaViewModel.cs" />
     <Compile Include="Models\KitapViewModel.cs" />
     <Compile Include="Models\YazarViewModel.cs" />
     <Compile Include="MyContext.cs" />
@@ -81,8 +103,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812280908479_denem.resx">
-      <DependentUpon>201812280908479_denem.cs</DependentUpon>
+    <EmbeddedResource Include="KitapKirala.resx">
+      <DependentUpon>KitapKirala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812310920401_son.resx">
+      <DependentUpon>201812310920401_son.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,5 +139,13 @@
   <ItemGroup>
     <None Include="Resources\Kutuphane.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

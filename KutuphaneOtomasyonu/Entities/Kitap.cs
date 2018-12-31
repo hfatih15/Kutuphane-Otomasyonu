@@ -29,8 +29,8 @@ namespace KutuphaneOtomasyonu
      
         public int Adet { get; set; }
 
+        public virtual ICollection<Kiralama> Kiralamalar { get; set; } = new HashSet<Kiralama>();
 
-      
 
 
 

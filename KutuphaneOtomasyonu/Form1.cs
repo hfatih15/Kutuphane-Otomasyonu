@@ -49,10 +49,16 @@ namespace KutuphaneOtomasyonu
 
         private void üyeKayıtİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UyeKayit yeniSayfa = new UyeKayit();
+            UyeKayit UyeKayitSayfasi = new UyeKayit();
 
-            yeniSayfa.ShowDialog();
+            UyeKayitSayfasi.ShowDialog();
       
+        }
+
+        private void kitapKiralaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KitapKirala KitapKiralaSayfasi = new KitapKirala();
+            KitapKiralaSayfasi.ShowDialog();
         }
     }
 }

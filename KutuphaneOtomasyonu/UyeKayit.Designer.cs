@@ -39,9 +39,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(320, 224);
+            this.button1.Location = new System.Drawing.Point(427, 276);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 45);
+            this.button1.Size = new System.Drawing.Size(153, 55);
             this.button1.TabIndex = 0;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = true;
@@ -49,37 +50,41 @@
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(320, 77);
+            this.txtAd.Location = new System.Drawing.Point(427, 95);
+            this.txtAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAd.Multiline = true;
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(115, 20);
+            this.txtAd.Size = new System.Drawing.Size(152, 24);
             this.txtAd.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(211, 77);
+            this.label1.Location = new System.Drawing.Point(281, 95);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 35);
+            this.label1.Size = new System.Drawing.Size(58, 41);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ad";
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(320, 133);
+            this.txtSoyad.Location = new System.Drawing.Point(427, 164);
+            this.txtSoyad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSoyad.Multiline = true;
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(115, 20);
+            this.txtSoyad.Size = new System.Drawing.Size(152, 24);
             this.txtSoyad.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(210, 120);
+            this.label2.Location = new System.Drawing.Point(280, 148);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 35);
+            this.label2.Size = new System.Drawing.Size(107, 41);
             this.label2.TabIndex = 4;
             this.label2.Text = "Soyad";
             // 
@@ -87,27 +92,29 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(211, 170);
+            this.label3.Location = new System.Drawing.Point(281, 209);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 35);
+            this.label3.Size = new System.Drawing.Size(107, 41);
             this.label3.TabIndex = 5;
             this.label3.Text = "Tc No";
             // 
             // txtTCKN
             // 
-            this.txtTCKN.Location = new System.Drawing.Point(320, 183);
+            this.txtTCKN.Location = new System.Drawing.Point(427, 225);
+            this.txtTCKN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTCKN.Multiline = true;
             this.txtTCKN.Name = "txtTCKN";
-            this.txtTCKN.Size = new System.Drawing.Size(115, 20);
+            this.txtTCKN.Size = new System.Drawing.Size(152, 24);
             this.txtTCKN.TabIndex = 6;
             // 
             // UyeKayit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::KutuphaneOtomasyonu.Properties.Resources.Kutuphane;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.txtTCKN);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -115,8 +122,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAd);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UyeKayit";
             this.Text = "Uye Kayit İşlemleri";
+            this.Load += new System.EventHandler(this.UyeKayit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

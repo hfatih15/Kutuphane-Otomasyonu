@@ -40,5 +40,10 @@ namespace KutuphaneOtomasyonu
                 
             }
         }
+
+        private void UyeKayit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
