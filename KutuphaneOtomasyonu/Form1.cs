@@ -60,5 +60,12 @@ namespace KutuphaneOtomasyonu
             KitapKirala KitapKiralaSayfasi = new KitapKirala();
             KitapKiralaSayfasi.ShowDialog();
         }
+
+        private void kitapVeYazarEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KitapVeYazarEkle kitapVeYazarEkleSayfasi = new KitapVeYazarEkle();
+
+            kitapVeYazarEkleSayfasi.ShowDialog();
+        }
     }
 }

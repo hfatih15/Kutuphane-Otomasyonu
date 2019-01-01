@@ -13,18 +13,21 @@ namespace KutuphaneOtomasyonu
     {
         [Key]
         [Column(Order = 1)]
-        public int UyeId { get; set; }
+        public int KitapID { get; set; }
         [Key]
         [Column(Order = 2)]
-        public int KitapId { get; set; }
-        [Column("Ekleme", TypeName = "smalldatetime")]
-        public DateTime AlinanTarih { get; set; } = DateTime.Now;
-
-
-
-        [ForeignKey("UyeId")]
-        public virtual Uyeler Uyeler { get; set; }
-        [ForeignKey("KitapId")]
+        public int UyeID { get; set; }
+        [Column("AlindigiTarih ", TypeName = "date")]
+        public DateTime AlindigiTarih { get; set; } = DateTime.Now;
+        [ForeignKey("KitapID")]
         public virtual Kitap Kitap { get; set; }
+        [ForeignKey("UyeID")]
+        public virtual Uyeler Uye { get; set; }
+        public string Ad { get; set; }
+        public string Soyad { get; set; }
+        public string KitapAdi { get; set; }
+        public string YazarAdi { get; set; }
+
+
     }
 }

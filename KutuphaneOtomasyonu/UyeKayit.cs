@@ -32,12 +32,27 @@ namespace KutuphaneOtomasyonu
 
                 });
                 db.SaveChanges();
-                MessageBox.Show("Kayıt eklendi");
+                MessageBox.Show("Kayıt Sisteme Eklendi");
+               
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 
+            } FormuTemizle();
+        }
+
+
+        private void FormuTemizle()
+        {
+            foreach (Control control in Controls)
+            {
+                if (control is TextBox)
+                    control.Text = string.Empty;
+                if (control is ListBox lst)
+                    lst.Items.Clear();
+                //if (control is ComboBox cmb)
+                //    cmb.Items.Clear();
             }
         }
 

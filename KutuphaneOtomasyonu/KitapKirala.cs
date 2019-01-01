@@ -22,13 +22,13 @@ namespace KutuphaneOtomasyonu
         {
             MyContext db = new MyContext();
 
-            lstKitaplar.DataSource = db.Kitaplar
+          /*  lstKitaplar.DataSource = db.Kitaplar
                  .Select(x => new KitapViewModel()
                  {
 
                      KitapAdi = x.KitapAdi,
                      Adet = x.Adet
-                 }).ToList();
+                 }).ToList();*/
             
         }
     }

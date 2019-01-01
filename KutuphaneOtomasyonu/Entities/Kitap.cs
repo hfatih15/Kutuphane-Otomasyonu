@@ -19,15 +19,15 @@ namespace KutuphaneOtomasyonu
       //  [Index(IsUnique = true)]
         public string KitapAdi { get; set; }
         [Required]
-        public string KitapTuru { get; set; }
+        public string KitapTuru { get; set; }  
 
         public int YazarId { get; set; }
 
         [ForeignKey("YazarId")]
         public virtual Yazar Yazar { get; set; }
 
-     
-        public int Adet { get; set; }
+
+        public decimal Adet { get; set; } = 0;
 
         public virtual ICollection<Kiralama> Kiralamalar { get; set; } = new HashSet<Kiralama>();
 
