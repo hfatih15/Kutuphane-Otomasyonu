@@ -22,7 +22,7 @@ namespace KutuphaneOtomasyonu
         [Required]
         [StringLength(11) , MaxLength(11) , MinLength(11)]
         public string TCKNO { get; set; }
-        
+        public bool VarMi { get; set; } = false;
         public int CezaTutari { get; set; } = 0;
 
     }

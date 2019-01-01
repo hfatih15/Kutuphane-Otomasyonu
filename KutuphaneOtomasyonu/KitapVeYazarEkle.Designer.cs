@@ -97,6 +97,7 @@
             this.btnYazarEkle.TabIndex = 7;
             this.btnYazarEkle.Text = "Kaydet";
             this.btnYazarEkle.UseVisualStyleBackColor = true;
+            this.btnYazarEkle.Click += new System.EventHandler(this.btnYazarEkle_Click);
             // 
             // label3
             // 

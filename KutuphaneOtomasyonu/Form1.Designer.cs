@@ -33,10 +33,11 @@
             this.kitapKiralaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lstyazar = new System.Windows.Forms.ListBox();
             this.lstUyeler = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.lstKitaplar = new System.Windows.Forms.ListBox();
             this.btnYazargetir = new System.Windows.Forms.Button();
             this.btnUyeleriGetir = new System.Windows.Forms.Button();
             this.kitapVeYazarEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnKitaplariGetir = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,6 +78,7 @@
             this.lstyazar.Name = "lstyazar";
             this.lstyazar.Size = new System.Drawing.Size(159, 244);
             this.lstyazar.TabIndex = 2;
+            this.lstyazar.SelectedIndexChanged += new System.EventHandler(this.lstyazar_SelectedIndexChanged);
             // 
             // lstUyeler
             // 
@@ -88,22 +90,22 @@
             this.lstUyeler.Size = new System.Drawing.Size(159, 244);
             this.lstUyeler.TabIndex = 3;
             // 
-            // listBox3
+            // lstKitaplar
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(651, 91);
-            this.listBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(159, 244);
-            this.listBox3.TabIndex = 4;
+            this.lstKitaplar.FormattingEnabled = true;
+            this.lstKitaplar.ItemHeight = 16;
+            this.lstKitaplar.Location = new System.Drawing.Point(651, 91);
+            this.lstKitaplar.Margin = new System.Windows.Forms.Padding(4);
+            this.lstKitaplar.Name = "lstKitaplar";
+            this.lstKitaplar.Size = new System.Drawing.Size(322, 244);
+            this.lstKitaplar.TabIndex = 4;
             // 
             // btnYazargetir
             // 
-            this.btnYazargetir.Location = new System.Drawing.Point(76, 385);
+            this.btnYazargetir.Location = new System.Drawing.Point(92, 385);
             this.btnYazargetir.Margin = new System.Windows.Forms.Padding(4);
             this.btnYazargetir.Name = "btnYazargetir";
-            this.btnYazargetir.Size = new System.Drawing.Size(199, 59);
+            this.btnYazargetir.Size = new System.Drawing.Size(114, 59);
             this.btnYazargetir.TabIndex = 5;
             this.btnYazargetir.Text = "Yazarları Getir";
             this.btnYazargetir.UseVisualStyleBackColor = true;
@@ -111,10 +113,10 @@
             // 
             // btnUyeleriGetir
             // 
-            this.btnUyeleriGetir.Location = new System.Drawing.Point(356, 385);
+            this.btnUyeleriGetir.Location = new System.Drawing.Point(373, 385);
             this.btnUyeleriGetir.Margin = new System.Windows.Forms.Padding(4);
             this.btnUyeleriGetir.Name = "btnUyeleriGetir";
-            this.btnUyeleriGetir.Size = new System.Drawing.Size(160, 59);
+            this.btnUyeleriGetir.Size = new System.Drawing.Size(129, 59);
             this.btnUyeleriGetir.TabIndex = 6;
             this.btnUyeleriGetir.Text = "Uyeleri Getir";
             this.btnUyeleriGetir.UseVisualStyleBackColor = true;
@@ -127,14 +129,26 @@
             this.kitapVeYazarEkleToolStripMenuItem.Text = "Kitap ve Yazar Ekle";
             this.kitapVeYazarEkleToolStripMenuItem.Click += new System.EventHandler(this.kitapVeYazarEkleToolStripMenuItem_Click);
             // 
+            // btnKitaplariGetir
+            // 
+            this.btnKitaplariGetir.Location = new System.Drawing.Point(739, 385);
+            this.btnKitaplariGetir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKitaplariGetir.Name = "btnKitaplariGetir";
+            this.btnKitaplariGetir.Size = new System.Drawing.Size(160, 59);
+            this.btnKitaplariGetir.TabIndex = 7;
+            this.btnKitaplariGetir.Text = "Kitapları Getir";
+            this.btnKitaplariGetir.UseVisualStyleBackColor = true;
+            this.btnKitaplariGetir.Click += new System.EventHandler(this.btnKitaplariGetir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.btnKitaplariGetir);
             this.Controls.Add(this.btnUyeleriGetir);
             this.Controls.Add(this.btnYazargetir);
-            this.Controls.Add(this.listBox3);
+            this.Controls.Add(this.lstKitaplar);
             this.Controls.Add(this.lstUyeler);
             this.Controls.Add(this.lstyazar);
             this.Controls.Add(this.menuStrip1);
@@ -154,12 +168,13 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ListBox lstyazar;
         private System.Windows.Forms.ListBox lstUyeler;
-        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox lstKitaplar;
         private System.Windows.Forms.Button btnYazargetir;
         private System.Windows.Forms.Button btnUyeleriGetir;
         private System.Windows.Forms.ToolStripMenuItem üyeKayıtİşlemleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kitapKiralaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kitapVeYazarEkleToolStripMenuItem;
+        private System.Windows.Forms.Button btnKitaplariGetir;
     }
 }
 

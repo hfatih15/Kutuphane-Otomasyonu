@@ -46,33 +46,33 @@ namespace KutuphaneOtomasyonu
 
         private void btnKitapKaydet_Click(object sender, EventArgs e)
         {
-            MyContext db = new MyContext();
-            try
-            {
-                var kitap = new Kitap()
-                {
-                    KitapAdi = txtKitapAdi.Text,
-                    Adet = Convert.ToDecimal(txtKitapAdi.Text),
-                    YazarId = (cmbYazarlar.SelectedItem as YazarViewModel).YazarId
+            //MyContext db = new MyContext();
+            //try
+            //{
+            //    var kitap = new Kitap()
+            //    {
+            //        KitapAdi = txtKitapAdi.Text,
+            //        Adet = Convert.ToDecimal(txtKitapAdi.Text),
+            //        YazarId = (cmbYazarlar.SelectedItem as YazarViewModel).YazarId
 
 
 
-                };
-                db.Kitaplar.Add(kitap);
-                db.SaveChanges();
-                MessageBox.Show("kayıt basarılı");
-                FormuTemizle(this.pnlKitap);
+            //    };
+            //    db.Kitaplar.Add(kitap);
+            //    db.SaveChanges();
+            //    MessageBox.Show("kayıt basarılı");
+            //    FormuTemizle(this.pnlKitap);
 
-            }
-            catch (Exception ex)
-            {
+            //}
+            //catch (Exception ex)
+            //{
 
-                MessageBox.Show(ex.Message);
-            }
+            //    MessageBox.Show(ex.Message);
+            //}
 
 
 
-            /* MyContext db = new MyContext();
+             MyContext db = new MyContext();
             try
             {
                 db.Kitaplar.Add(new Kitap()
@@ -90,7 +90,34 @@ namespace KutuphaneOtomasyonu
             {
 
                 MessageBox.Show(ex.Message);
-            }*/
+            }
+
+            
         }
+
+        private void btnYazarEkle_Click(object sender, EventArgs e)
+        {
+            MyContext db = new MyContext();
+            try
+            {
+                var yazar = new Yazar()
+                {
+                    YazarAd = txtAd.Text,
+                    YazarSoyad = txtSoyad.Text
+
+                };
+                db.Yazarlar.Add(yazar);
+                db.SaveChanges();
+                MessageBox.Show("kayıt basarılı");
+                FormuTemizle(this.pnlYazar);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
     }
 }
+

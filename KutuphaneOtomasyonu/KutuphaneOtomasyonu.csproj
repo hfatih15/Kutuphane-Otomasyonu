@@ -66,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\KiralamaBusiness.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,13 +87,9 @@
     <Compile Include="KitapVeYazarEkle.Designer.cs">
       <DependentUpon>KitapVeYazarEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201901011630147_LastChanges.cs" />
-    <Compile Include="Migrations\201901011630147_LastChanges.Designer.cs">
-      <DependentUpon>201901011630147_LastChanges.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201901011914553_sonnn.cs" />
-    <Compile Include="Migrations\201901011914553_sonnn.Designer.cs">
-      <DependentUpon>201901011914553_sonnn.cs</DependentUpon>
+    <Compile Include="Migrations\201901012125116_abcd.cs" />
+    <Compile Include="Migrations\201901012125116_abcd.Designer.cs">
+      <DependentUpon>201901012125116_abcd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\KitapKiralaViewModel.cs" />
@@ -119,11 +116,8 @@
     <EmbeddedResource Include="KitapVeYazarEkle.resx">
       <DependentUpon>KitapVeYazarEkle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901011630147_LastChanges.resx">
-      <DependentUpon>201901011630147_LastChanges.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901011914553_sonnn.resx">
-      <DependentUpon>201901011914553_sonnn.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201901012125116_abcd.resx">
+      <DependentUpon>201901012125116_abcd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

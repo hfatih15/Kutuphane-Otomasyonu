@@ -18,7 +18,7 @@ namespace KutuphaneOtomasyonu.Models
         public string KitapTuru { get; set; }
         public int YazarId { get; set; }
         public virtual Yazar Yazar { get; set; }
-        public int Adet { get; set; }
+        public decimal Adet { get; set; }
 
         public override string ToString() => $"Kitap Adı: {KitapAdi} - Adet: {Adet} ";
 

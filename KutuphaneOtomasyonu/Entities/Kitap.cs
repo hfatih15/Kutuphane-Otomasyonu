@@ -14,9 +14,11 @@ namespace KutuphaneOtomasyonu
 
         [Key]
         public int KitapId { get; set; }
-        
+       
+        // [Index(IsUnique = true)]
         [Required]
-      //  [Index(IsUnique = true)]
+       
+        [StringLength(60)]
         public string KitapAdi { get; set; }
         [Required]
         public string KitapTuru { get; set; }  

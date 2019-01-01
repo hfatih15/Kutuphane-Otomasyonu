@@ -67,5 +67,41 @@ namespace KutuphaneOtomasyonu
 
             kitapVeYazarEkleSayfasi.ShowDialog();
         }
+
+        private void btnKitaplariGetir_Click(object sender, EventArgs e)
+        {
+            MyContext db =  new MyContext();
+
+            lstKitaplar.DataSource = db.Kitaplar.
+                OrderBy(x => x.KitapAdi)
+                .Select(x => new KitapViewModel()
+                {
+                    KitapAdi = x.KitapAdi,
+                    KitapId = x.KitapId,
+                    Adet = x.Adet
+
+
+
+                }).ToList();
+        }
+        YazarViewModel seciliYazar;
+        private void lstyazar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            MyContext db = new MyContext();
+
+            if (lstyazar.SelectedItem == null) return;
+
+            seciliYazar = lstyazar.SelectedItem as YazarViewModel;
+
+            lstKitaplar.DataSource = db.Kitaplar
+                    .Where(x => x.YazarId == seciliYazar.YazarId)
+                    .OrderBy(x => x.KitapAdi)
+                    .Select(x => new KitapViewModel
+                    {
+                        KitapAdi = x.KitapAdi,
+                        Adet = x.Adet
+                    }).ToList();
+        }
     }
 }
